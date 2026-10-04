@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Maomao | Character of the Week Preview | Dreaming Anime</title>
+  <meta name="description" content="A draft Character of the Week feature for Maomao from The Apothecary Diaries. Preview only, not published on the live site.">
+  <meta property="og:title" content="Maomao | Character of the Week Preview | Dreaming Anime">
+  <meta property="og:description" content="A preview spotlight on Maomao, the sharp eyed apothecary at the heart of The Apothecary Diaries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --orange: #ff6b00;
+      --ink: #090a0e;
+      --panel: #151922;
+      --line: #303744;
+      --muted: #b8c0cc;
+      --paper: #f5f6f8;
+      --body: #d2d7df;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--ink);
+      color: var(--paper);
+      font: 16px/1.65 Inter, Arial, sans-serif;
+    }
+    a { color: inherit; }
+    .global-home-nav {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 58px;
+      padding: .65rem .85rem;
+      background: #fff;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .65rem;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .nav-links > li { position: relative; list-style: none; }
+    .nav-links a, .nav-links button, .nav-links summary {
+      display: block;
+      padding: .25rem .15rem;
+      border: 0;
+      background: transparent;
+      color: var(--orange);
+      text-decoration: none;
+      font: 900 .95rem/1.2 "Arial Black", Inter, Arial, sans-serif;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .nav-links a:hover, .nav-links button:hover, .nav-links details[open] > summary {
+      color: #111;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+    .nav-links a:focus-visible, .nav-links button:focus-visible, .nav-links summary:focus-visible {
+      outline: 2px solid var(--orange);
+      outline-offset: 4px;
+    }
+    .nav-links details > div {
+      position: absolute;
+      z-index: 22;
+      top: calc(100% + .35rem);
+      left: 0;
+      min-width: 170px;
+      padding: 8px;
+      border: 1px solid #111;
+      background: #fff;
+    }
+    .nav-links details > div a {
+      padding: 9px 10px;
+      color: #111;
+      font: 800 .85rem/1.3 Inter, Arial, sans-serif;
+    }
+    .nav-links details > div a:hover { background: var(--orange); text-decoration: none; }
+    .preview-banner {
+      padding: .58rem 1rem;
+      background: var(--orange);
+      color: #111;
+      text-align: center;
+      font: 700 .7rem/1.4 "Space Mono", monospace;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    main { width: min(1100px, 100%); margin: 0 auto; padding: 4.2rem 6vw 5rem; }
+    .hero { margin-bottom: 3.2rem; padding-left: 1.2rem; border-left: 4px solid var(--orange); }
+    .eyebrow, .meta, .label {
+      color: var(--orange);
+      font: 700 .7rem/1.5 "Space Mono", monospace;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { margin: 0; font-family: Bangers, "Arial Black", sans-serif; font-weight: 400; line-height: 1; }
+    h1 { margin: .45rem 0 .65rem; color: var(--orange); font-size: clamp(4.4rem, 11vw, 8.2rem); letter-spacing: .015em; }
+    h2 { margin: .5rem 0 1rem; color: var(--orange); font-size: clamp(2.6rem, 6vw, 4.1rem); }
+    h3 { margin: .35rem 0 .6rem; color: var(--paper); font-size: clamp(1.8rem, 3vw, 2.5rem); }
+    p { max-width: 76ch; color: var(--body); }
+    .lead { max-width: 780px; margin: 0; font-size: clamp(1.05rem, 2vw, 1.2rem); }
+    .hero-links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.1rem; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: .7rem .95rem;
+      border: 1px solid var(--orange);
+      background: var(--orange);
+      color: #111;
+      text-decoration: none;
+      font: 800 .72rem/1.2 Inter, Arial, sans-serif;
+      letter-spacing: .035em;
+      text-transform: uppercase;
+      transition: background-color .16s ease, color .16s ease, transform .16s ease;
+    }
+    .button:hover { background: transparent; color: var(--paper); transform: translateY(-1px); }
+    .button.secondary { background: transparent; color: var(--paper); }
+    .button.secondary:hover { background: var(--orange); color: #111; }
+    .feature-grid { display: grid; grid-template-columns: minmax(250px, .85fr) minmax(0, 1.15fr); gap: 1.5rem; align-items: stretch; margin: 2rem 0 3rem; }
+    .art-placeholder {
+      display: flex;
+      min-height: 430px;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.25rem;
+      border: 1px solid var(--line);
+      background-color: #11141a;
+      background-image: linear-gradient(135deg, transparent 49.6%, rgba(255,107,0,.12) 49.8%, rgba(255,107,0,.12) 50.2%, transparent 50.4%), linear-gradient(45deg, transparent 49.6%, rgba(184,192,204,.07) 49.8%, rgba(184,192,204,.07) 50.2%, transparent 50.4%);
+      background-size: 42px 42px;
+      text-align: center;
+    }
+    .art-placeholder .stamp { align-self: flex-start; padding: .35rem .5rem; background: var(--orange); color: #111; font: 700 .64rem/1.4 "Space Mono", monospace; letter-spacing: .08em; }
+    .art-placeholder .art-title { color: var(--orange); font: 400 clamp(3rem, 8vw, 5rem)/.9 Bangers, sans-serif; text-transform: uppercase; }
+    .art-placeholder .art-note { max-width: 30ch; align-self: center; margin: 0; color: var(--muted); font: .76rem/1.6 "Space Mono", monospace; }
+    .card { padding: clamp(1.25rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+    .card p:last-child { margin-bottom: 0; }
+    .card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 3rem; }
+    .card-grid .card { min-height: 100%; }
+    .source-list { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1rem; }
+    .source-link { color: var(--paper); text-decoration-color: var(--orange); text-underline-offset: 4px; }
+    .source-link:hover { color: var(--orange); }
+    .preview-note { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .86rem; }
+    footer { padding: 2rem 6vw; border-top: 1px solid var(--line); color: var(--muted); }
+    footer a { color: var(--orange); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 720px) {
+      main { padding: 2.7rem 5vw 3.5rem; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .art-placeholder { min-height: 340px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .nav-links { gap: .5rem .65rem; }
+      .nav-links a, .nav-links button, .nav-links summary { font-size: .78rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="global-home-nav" aria-label="Main navigation">
+    <ul class="nav-links">
+      <li><a href="https://dreaminganime.com/review/">REVIEWS</a></li>
+      <li><a href="https://dreaminganime.com/blog/?v=2.1.5">BLOG</a></li>
+      <li><details><summary>EXPLORE ▾</summary><div><a href="https://dreaminganime.com/#genres">GENRES</a><a href="https://dreaminganime.com/cinema/">WATCH</a><a href="https://dreaminganime.com/manga/">MANGA</a><a href="https://dreaminganime.com/music/">MUSIC</a></div></details></li>
+      <li><a href="https://dreaminganime.com/shop/">SHOP</a></li>
+      <li><details><summary>PRODUCTS ▾</summary><div><a href="https://dreaminganime.com/dreamers-collection/">COLLECTION</a><a href="https://dreaminganime.com/quiz/">QUIZ</a><a href="https://dreaminganime.com/wallpapers/">WALLPAPERS</a></div></details></li>
+    </ul>
+  </nav>
+  <div class="preview-banner">Staging preview · Maomao candidate · Not on the live site</div>
+  <main id="character-of-the-week">
+    <header class="hero">
+      <div class="eyebrow">Character of the Week · Next week candidate</div>
+      <h1>Maomao</h1>
+      <p class="lead">An apothecary drawn into the Imperial Palace, Maomao turns her knowledge of medicine and poisons into a way through its mysteries. Season 3 brings a new case, with whispers of famine and an immortal maiden leading her far beyond Li.</p>
+      <div class="hero-links">
+        <a class="button" href="https://www.crunchyroll.com/news/guides/2025/6/4/the-apothecary-diaries-characters#Maomao" target="_blank" rel="noopener noreferrer">Read Maomao’s character guide</a>
+        <a class="button secondary" href="character-of-the-week/archive.html">Character archive</a>
+      </div>
+    </header>
+
+    <section class="feature-grid" aria-label="Maomao feature preview">
+      <div class="art-placeholder" role="img" aria-label="Reserved artwork area. Matching Maomao artwork is pending approval.">
+        <span class="stamp">Artwork pending approval</span>
+        <span class="art-title">Maomao</span>
+        <p class="art-note">A character matched illustration will be added after approval. No official key art is used in this draft.</p>
+      </div>
+      <article class="card">
+        <div class="eyebrow">Character file</div>
+        <h2>A sharp mind behind the mystery</h2>
+        <p>Raised in the red light district, Maomao keeps a low profile and relies on her practical knowledge as an apothecary. Her sharp instincts and understanding of poisons and medicinal ingredients draw her into cases inside the Imperial Palace.</p>
+        <p>She becomes an unofficial detective, solving problems others overlook while trying not to attract more attention than necessary.</p>
+        <a class="source-link" href="https://www.crunchyroll.com/news/guides/2025/6/4/the-apothecary-diaries-characters#Maomao" target="_blank" rel="noopener noreferrer">English character reference: Crunchyroll</a>
+      </article>
+    </section>
+
+    <section aria-labelledby="season-heading">
+      <div class="eyebrow">The story continues</div>
+      <h2 id="season-heading">A new mystery beyond Li</h2>
+      <div class="card">
+        <p>For Season 3, Maomao follows clues tied to famine and an immortal maiden. Crunchyroll’s Fall lineup describes this as a new mystery that takes her far beyond Li.</p>
+        <div class="source-list">
+          <a class="source-link" href="https://www.crunchyroll.com/news/seasonal-lineup/2026/9/15/fall-anime-2026-crunchyroll" target="_blank" rel="noopener noreferrer">Season 3 synopsis</a>
+          <a class="source-link" href="https://www.crunchyroll.com/series/G3KHEVDJ7/the-apothecary-diaries" target="_blank" rel="noopener noreferrer">Watch The Apothecary Diaries</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="preview-details" style="margin-top:3rem">
+      <div class="eyebrow">Draft notes</div>
+      <h2 id="preview-details">Ready for your review</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="label">What’s included</div>
+          <h3>Profile direction</h3>
+          <p>Existing Dreaming Anime navigation, orange and charcoal palette, concise character story, and an archive link.</p>
+        </article>
+        <article class="card">
+          <div class="label">Still pending</div>
+          <h3>Matching artwork</h3>
+          <p>The artwork area is intentionally a placeholder. This preview does not add new art, active purchase links, or changes to the live site.</p>
+        </article>
+      </div>
+    </section>
+    <p class="preview-note">This is a public review draft hosted separately from DreamingAnime.com. Character details are referenced to Crunchyroll’s English guide and season listing.</p>
+  </main>
+  <footer>Dreaming Anime · Character culture, story analysis, cosplay craft, and watch discovery · <a href="https://dreaminganime.com/character-of-the-week/archive.html">Character archive</a></footer>
+</body>
+</html>
