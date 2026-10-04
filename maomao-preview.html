@@ -47,6 +47,9 @@
     .art-placeholder .stamp { align-self:flex-start; padding:.35rem .5rem; background:var(--orange); color:#111; font:700 .64rem/1.4 "Space Mono",monospace; letter-spacing:.08em; }
     .art-placeholder .art-title { color:var(--orange); font:400 clamp(3rem,8vw,5rem)/.9 Bangers,sans-serif; text-transform:uppercase; }
     .art-placeholder .art-note { max-width:30ch; align-self:center; margin:0; color:var(--muted); font:.76rem/1.6 "Space Mono",monospace; }
+    .feature-cover { display:flex; min-height:430px; flex-direction:column; justify-content:center; align-items:center; margin:0; border:1px solid var(--line); background:#11141a; }
+    .feature-cover img { display:block; width:100%; max-height:560px; object-fit:contain; }
+    .feature-cover figcaption { width:100%; padding:.6rem .75rem; color:var(--muted); font-size:.74rem; text-align:center; }
     .card { padding:clamp(1.25rem,3vw,2rem); border:1px solid var(--line); border-radius:6px; background:var(--panel); }
     .card p:last-child { margin-bottom:0; }
     .product-grid,.wallpaper-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin:1.3rem 0; }
@@ -93,11 +96,10 @@
     </header>
 
     <section class="feature-grid" aria-label="Maomao feature preview">
-      <div class="art-placeholder" role="img" aria-label="Main character portrait area held for a separately approved feature image.">
-        <span class="stamp">Feature portrait pending</span>
-        <span class="art-title">Maomao</span>
-        <p class="art-note">The three requested phone wallpaper options appear below. This space is reserved for a separate feature portrait.</p>
-      </div>
+      <figure class="feature-cover">
+        <img src="assets/character/maomao-character-cover.webp" alt="Dreaming Anime Character of the Week cover featuring Maomao from The Apothecary Diaries" loading="eager" decoding="async">
+        <figcaption>Dreaming Anime feature cover art; not official key art.</figcaption>
+      </figure>
       <article class="card">
         <div class="eyebrow">Character file</div>
         <h2>A sharp mind behind the mystery</h2>
