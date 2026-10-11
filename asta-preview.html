@@ -66,6 +66,13 @@
     .wallpaper-card img { display:block; width:100%; height:auto; max-height:680px; object-fit:contain; border:1px solid var(--line); background:#101218; }
     .wallpaper-card h3 { margin:.9rem 0 .35rem; font:700 1rem/1.35 Inter,Arial,sans-serif; color:var(--paper); }
     .wallpaper-card p { margin:.25rem 0; }
+    .amazon-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin:1.3rem 0; }
+    .amazon-card { display:flex; min-width:0; flex-direction:column; padding:1rem; border:1px solid var(--line); border-radius:6px; background:var(--panel); }
+    .amazon-card img { display:block; width:min(100%,180px); height:180px; margin:0 auto 1rem; object-fit:contain; background:#101218; }
+    .amazon-card h3 { font:700 1rem/1.4 Inter,Arial,sans-serif; color:var(--paper); }
+    .amazon-card .rating { color:var(--orange); font-weight:700; }
+    .amazon-card .button { width:100%; margin-top:auto; }
+    .amazon-disclosure { margin:1rem 0 0; color:var(--muted); font-size:.84rem; }
     .spec { color:var(--orange)!important; font:700 .7rem/1.5 "Space Mono",monospace; letter-spacing:.04em; }
     .source-link { color:var(--paper); text-decoration-color:var(--orange); text-underline-offset:4px; }
     .source-link:hover { color:var(--orange); }
@@ -77,6 +84,7 @@
     footer { padding:2rem 6vw; border-top:1px solid var(--line); color:var(--muted); }
     footer a { color:var(--orange); text-decoration:none; }
     footer a:hover { text-decoration:underline; }
+    @media(max-width:900px) { .amazon-grid{grid-template-columns:1fr} }
     @media(max-width:760px) { .global-home-nav{flex-wrap:wrap;justify-content:space-between;padding:.55rem .8rem}.nav-brand{margin-right:auto}.nav-links{width:100%;flex:1 1 100%;justify-content:center;gap:.5rem .65rem;border-top:1px solid #eee;padding-top:.55rem}.nav-links a,.nav-links summary{font-size:.78rem} main{padding:2.7rem 5vw 3.5rem}.feature-grid{grid-template-columns:1fr}.facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
     @media(max-width:500px) { .facts-grid,.wallpaper-grid{grid-template-columns:1fr}.wallpaper-card img{max-height:620px} }
     @media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important} }
@@ -105,7 +113,7 @@
       <div class="hero-links">
         <a class="button" href="character-of-the-week/asta-cosplay-guide.html">Read the cosplay guide</a>
         <a class="button secondary" href="https://bclover.jp/en/character/asta.php" target="_blank" rel="noopener noreferrer">Official character profile</a>
-        <a class="button secondary" href="https://dreaminganime.com/character-of-the-week/archive.html">Character archive</a>
+        <a class="button secondary" href="asta-stage-archive.html">Character archive</a>
       </div>
     </header>
 
@@ -168,6 +176,36 @@
       <p class="preview-note">The art is original fan work, not official Black Clover key art. Wallpaper pricing and delivery options have not been set in this preview.</p>
     </section>
 
+    <section id="asta-amazon-picks" aria-labelledby="amazon-heading">
+      <div class="eyebrow">Asta picks · Amazon US</div>
+      <h2 id="amazon-heading">Black Clover collectibles</h2>
+      <p>Three Asta figures available from Amazon US, selected for the character preview.</p>
+      <div class="amazon-grid">
+        <article class="amazon-card">
+          <img src="https://m.media-amazon.com/images/I/61zvdB8zI4L._AC_SY355_.jpg" width="180" height="180" alt="Funko Pop Animation Black Clover Asta vinyl figure" loading="lazy" decoding="async">
+          <h3>Funko Pop Animation: Black Clover – Asta</h3>
+          <p><strong>$12.99</strong></p>
+          <p class="rating">4.8★ · 1,105 reviews</p>
+          <p>100+ bought in the past month when checked.</p>
+          <a class="button" href="https://www.amazon.com/Funko-Pop-Animation-Black-Clover/dp/B095HV286D?tag=priscadezigns-20" target="_blank" rel="sponsored nofollow noopener noreferrer">View on Amazon</a>
+        </article>
+        <article class="amazon-card">
+          <h3>POP Anime: Black Clover – Black Asta Funko Vinyl Figure</h3>
+          <p><strong>$38.95</strong></p>
+          <p class="rating">4.5★ · 23 ratings</p>
+          <p>50+ bought in the past month when checked.</p>
+          <a class="button" href="https://www.amazon.com/POP-Anime-Compatible-Protector-Multicolor/dp/B0CL5BNGSC?tag=priscadezigns-20" target="_blank" rel="sponsored nofollow noopener noreferrer">View on Amazon</a>
+        </article>
+        <article class="amazon-card">
+          <h3>Good Smile Company Black Clover: Asta Nendoroid Action Figure</h3>
+          <p><strong>$69.99</strong></p>
+          <p class="rating">4.8★ · 9 ratings</p>
+          <a class="button" href="https://www.amazon.com/Good-Smile-Company-Black-Clover/dp/B0DMNPBNYB?tag=priscadezigns-20" target="_blank" rel="sponsored nofollow noopener noreferrer">View on Amazon</a>
+        </article>
+      </div>
+      <p class="amazon-disclosure">As an Amazon Associate I earn from qualifying purchases. Prices and availability can change; product details shown here were checked October 11, 2026. Product images are shown only where verified; other picks are text-only.</p>
+    </section>
+
     <section aria-labelledby="season-heading">
       <div class="eyebrow">Fall 2026 spotlight</div>
       <h2 id="season-heading">Black Clover returns</h2>
@@ -179,6 +217,6 @@
 
     <p class="preview-note">This is a public staging preview hosted separately from DreamingAnime.com. No live site pages or wallpaper pricing have been changed.</p>
   </main>
-  <footer>Dreaming Anime · Character culture, story analysis, cosplay craft, and watch discovery · <a href="https://dreaminganime.com/character-of-the-week/archive.html">Character archive</a></footer>
+  <footer>Dreaming Anime · Character culture, story analysis, cosplay craft, and watch discovery · <a href="asta-stage-archive.html">Character archive</a></footer>
 </body>
 </html>
